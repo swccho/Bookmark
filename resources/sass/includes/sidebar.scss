@@ -1,0 +1,90 @@
+aside{
+    .aside-header{
+        padding: 35px 0;
+        border-bottom: 1px solid $bg-theme;
+        .logo{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 100%;
+            letter-spacing: -0.17px;
+            color:$dark;
+            text-align: center;
+        }
+    }
+    .aside-body{
+        padding: 10px;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                a{
+                    border-radius: 8px;
+                    color: $dark;
+                    display: flex;
+                    list-style: none;
+                    align-items: center;
+                    text-decoration: none;
+                    justify-content: flex-start;
+                    padding: 10px 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 100%;
+                    letter-spacing: -0.17px;
+                    transition: all .2s ease;
+                    &:hover{
+                        transition: all .2s ease;
+                        background: #E8EBF0;
+                        .icon{
+                            transition: all .2s ease;
+                            color: $theme;
+                        }
+                    }
+                    &.active{
+                        transition: all .2s ease;
+                        background: #E8EBF0;
+                        .icon{
+                            transition: all .2s ease;
+                            color: $theme;
+                        }
+                    }
+                    .icon{
+                        display: block;
+                        margin-right: 10px;
+                        font-size: 30px;
+                    }
+                    .text{
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    border-bottom: 1px solid $bg-theme;
+                    margin: 10px 0;
+                }
+                &.collection{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-style: normal;
+                    line-height: 100%;
+                    letter-spacing: -0.17px;
+                    color: #000000;
+                    margin: 10px 0;
+                    .text{
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                    .more-option{
+                        i{
+                            cursor: pointer;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

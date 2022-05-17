@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "variables";
+@import "global";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $bg-theme;
+    padding: 10px;
+    overflow: hidden;
+    .app{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: calc(100vh - 36px);
+        overflow: auto;
+        .left{
+            background-color: $white;
+            border-radius: 6px;
+            width: 320px;
+            height: 100%;
+            overflow: auto;
+            /*Sidebar*/
+            @import "includes/sidebar";
+        }
+        .right{
+            height: 100%;
+            margin-left: 10px;
+            width: calc(100% - 330px);
+            background-color: $white;
+            border-radius: 6px;
+            overflow: auto;
+            /*Header*/
+            @import "includes/header";
+        }
+    }
+
+}
